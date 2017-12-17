@@ -1,0 +1,190 @@
+#header{
+    position: relative;
+    background: rgb(244, 244, 244);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'PT Mono', monospace;
+    font-size: 14px;
+    
+    
+    #image{
+        display: flex;
+        align-items: center;
+        width: 10%;
+        box-sizing: border-box;
+
+        a:first-child{
+            margin: 0px 20px 0px 30px;
+        }
+    }
+
+    #user{
+        a:first-child{
+            border-bottom: none;
+            text-decoration: none;
+            color: rgb(65, 131, 196);
+        }
+
+        div{
+            font-size: 12px;
+            color: rgb(120, 122, 123);
+            font-family: Questrial, sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+    }
+
+    #login{
+        a{
+            height: 30px;
+            width: 90px;
+            border: 1px solid rgb(236, 236, 236);
+            outline: 0px;
+            background-color: rgb(121, 152, 166);
+            font-size: 13px;
+            color: white;
+            cursor: pointer;
+            font-family: Questrial, sans-serif;
+            transition: all 0.2s ease-out;
+            text-decoration: none;
+            position: absolute;
+            right: 10px;
+            top: 17px;
+            box-sizing: border-box;
+            padding: 7px;
+            text-shadow: none;
+            text-align: center;
+        }
+    }
+}
+
+section{
+    display: flex;
+
+    #editor{
+        width: 60%;
+        height: 500px;
+        box-sizing: border-box;
+    
+        #control_editor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            position: relative;
+            font-size: 16px;
+            opacity: 0.7;
+            color: rgb(63, 64, 63);
+            font-family: 'Questrial', sans-serif;
+
+            #left_control_editor{
+                width: 30%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+
+                i{
+                    margin: 10px;
+                    font-size: 26px;
+                }
+            }
+
+            #middle_control_editor{
+                width: 40%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                > div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    height: 29px;
+                    width: 118px;
+                    font-size: 15px;
+                    font-family: Questrial;
+                    color: rgb(118, 119, 119);
+                    border: 1px solid rgb(237, 237, 237);
+                    outline: 0px;
+                    background-color: rgb(245, 245, 245);
+                    cursor: pointer;
+                    margin: 5px;
+                    line-height: 10px;
+                }
+
+                i{
+                    margin: 5px;
+                }
+            }
+
+            #right_control_editor{
+                width: 30%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        #code_editor{
+            margin-top: 0px;
+            height: 100%;
+            font-size: 14px;
+        }
+    }
+    
+    #compiler{
+        height: 500px;
+        position: relative;
+        display: block;
+        width: 40%;
+        box-sizing: border-box;
+        border-left: 10px solid gainsboro;
+    
+        #control_compiler{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 50px;
+            background: rgb(14, 22, 40);
+                
+            > div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                height: 29px;
+                width: 118px;
+                font-size: 15px;
+                font-family: Questrial;
+                color: rgb(118, 119, 119);
+                border: 1px solid rgb(118, 119, 119);
+                outline: 0px;
+                background-color: transparent;
+                cursor: pointer;
+                margin-left: 0px;
+                line-height: 10px;
+                z-index: 10;
+                margin-right: 15px;
+            }
+
+            i{
+                margin: 5px;
+            }
+        }
+    }
+}
