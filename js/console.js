@@ -10,6 +10,13 @@
       };
 
       $(function() {
+
+        // console.log override
+        console = {
+          log: function(item){
+            jqconsole.Append($('<div style="color: #c4cccc;">'+item+'</div>'));
+          }
+        }
         // Creating the console.
         var header = 'Native Browser JavaScript\n';
         window.jqconsole = $('#console').jqconsole(header, '   ');
@@ -91,10 +98,18 @@
 
         $('#run').on('click', function () {
           jqconsole.Reset();
+          jqconsole.ResetHistory();
           var command = editor.getValue();
           handler(command)
 
       })
+
+      $('#clear').on('click', function () {
+        jqconsole.Reset();
+        jqconsole.ResetHistory();
+        handler();
+
+    })
         // Initiate the first prompt.
         handler();
       });

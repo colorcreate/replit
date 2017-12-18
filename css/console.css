@@ -25,7 +25,7 @@
     font-weight: 700;
     color: #fc0;
     /* background: url("fc0.png") -13px -583px no-repeat; */
-    background-image: url(fc0.png);
+    background-image: url(../images/fc0.png);
     background-repeat: no-repeat;
     background-size: 8px;
     background-position-x: 5px;
@@ -35,7 +35,7 @@
     font-weight: 700;
     color: #f60;
     /* background: url('f60.png') -13px -647px no-repeat; */
-    background-image: url(f60.png);
+    background-image: url(../images/f60.png);
     background-repeat: no-repeat;
     background-size: 8px;
     background-position-x: 5px;
@@ -63,7 +63,7 @@
   }
 
   .result{
-    color: #6f0;
+    color: #4a1;
     display: block;
     position: relative;
     left: -8px;
