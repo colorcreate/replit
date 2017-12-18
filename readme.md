@@ -20,6 +20,6 @@ At least there are two tools to make Repl.it to be amazing compiler online
     > it's editable, you can customize it just like what you want
     > if you need terminal in web, I recomend you _jqconsole_
 
-hope you like what I made
+you can check this project in [here](colorcreate.github.io/replit)
 
 
