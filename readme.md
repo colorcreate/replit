@@ -6,7 +6,7 @@ as you know, [repl.it](https://repl.it/languages/javascript) is amazing compiler
 I always use it, especialy when I wanna test my javacsript algorithm
 
 in this project, I try to replicate this stuff but only in javascript language.
-I just focus in main controller and I am really sorry about my broken css
+I just focus in main controller (it's just run button and clear button that you can use) and I am really sorry about my broken css
 
 
 At least there are two tools to make Repl.it to be amazing compiler online
